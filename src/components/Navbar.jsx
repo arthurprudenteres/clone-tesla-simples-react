@@ -12,42 +12,28 @@ function Navbar() {
   return (
     <div className="flex justify-between items-center px-12 p-4 text-sm">
       <div>
-        <a href="https://tesla.com">
-          <img className="h-3 cursor-pointer" src={Logo} alt="Tesla logo" />
-        </a>
+        <img className="h-3 cursor-pointer" src={Logo} alt="Tesla logo" />
       </div>
 
       <div className="hidden lg:inline">
         <ul className="flex justify-center hover:cursor-pointer items-center">
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Model S</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Model 3</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Model X</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Model Y</li>
           <li className="py-1 px-4 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/models">Model S</a>
+            Solar Roof
           </li>
           <li className="py-1 px-4 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/model3">Model 3</a>
-          </li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/modelx">Model X</a>
-          </li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/modely">Model Y</a>
-          </li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/solarroof">Solar Roof</a>{" "}
-          </li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/solarpanels">Solar Panels</a>
+            Solar Panels
           </li>
         </ul>
       </div>
 
       <div className="hidden lg:inline">
         <ul className="flex justify-center hover:cursor-pointer items-center">
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">
-            <a href="https://shop.tesla.com/">Shop</a>
-          </li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">
-            <a href="https://www.tesla.com/teslaaccount">Account</a>
-          </li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Shop</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Account</li>
           <li
             onClick={handleNav}
             className="py-1 px-4 hover:rounded hover:bg-black/5"
@@ -85,13 +71,25 @@ function Navbar() {
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Model 3</li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Model X</li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Model Y</li>
-          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Solar Roof</li>
-          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Solar Panels</li>
-          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Existing Inventory</li>
-          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Used Inventory</li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            Solar Roof
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            Solar Panels
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            Existing Inventory
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            Used Inventory
+          </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Trade-In</li>
-          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Test Drive</li>
-          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Insurance</li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            Test Drive
+          </li>
+          <li className="py-3 pl-3 hover:rounded hover:bg-black/5">
+            Insurance
+          </li>
           <li className="py-3 pl-3 hover:rounded hover:bg-black/5">Powewall</li>
         </ul>
       </div>
