@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="bg-[url('./assets/image/Homepage-Model-3-LHD-Mobile.jpeg')] lg:bg-[url('./assets/image/Homepage-Model-3-Desktop-LHD.jpeg')] h-screen bg-cover bg-center">
+    <div className="bg-[url('./assets/image/Homepage-Model-3-LHD-Mobile.jpeg')] lg:bg-[url('./assets/image/Homepage-Model-3-Desktop-LHD.jpeg')] h-screen bg-cover bg-center overflow-x-hidden">
       <Navbar />
       <Model />
     </div>

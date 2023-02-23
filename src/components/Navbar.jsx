@@ -17,14 +17,14 @@ function Navbar() {
 
       <div className="hidden lg:inline">
         <ul className="flex justify-center hover:cursor-pointer items-center">
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Model S</li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Model 3</li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Model X</li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Model Y</li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Model S</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Model 3</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Model X</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Model Y</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">
             Solar Roof
           </li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">
             Solar Panels
           </li>
         </ul>
@@ -32,11 +32,11 @@ function Navbar() {
 
       <div className="hidden lg:inline">
         <ul className="flex justify-center hover:cursor-pointer items-center">
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Shop</li>
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5">Account</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Shop</li>
+          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Account</li>
           <li
             onClick={handleNav}
-            className="py-1 px-4 hover:rounded hover:bg-black/5"
+            className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300"
           >
             Menu
           </li>
@@ -54,14 +54,14 @@ function Navbar() {
       <div
         className={
           nav
-            ? "bg-white absolute top-0 right-0 w-80 h-full z-10"
-            : "fixed right-[100%]"
+            ? "bg-white absolute top-0 right-0 transform scale-x-100 w-80 h-full z-10 transition-all duration-500 ease-in-out origin-right"
+            : "absolute top-0 right-0 h-full w-80 transition-all duration-500 transform scale-x-0 origin-right"
         }
       >
         <div className="flex justify-end pr-8 pt-8">
           <TfiClose
             onClick={handleNav}
-            className="rounded p-1 hover:bg-black/5"
+            className="rounded p-1 hover:bg-black/5 cursor-pointer"
             size={28}
           />
         </div>
