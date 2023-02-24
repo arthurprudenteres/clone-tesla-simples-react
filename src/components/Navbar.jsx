@@ -18,6 +18,7 @@ function Navbar() {
     }
     didAnimate.current = true;
     gsap.from(navRef.current, {
+      delay: .3,
       opacity: 0,
       duration: 2,
     })
@@ -31,7 +32,7 @@ function Navbar() {
 
       <div className="hidden lg:inline">
         <ul className="flex justify-center hover:cursor-pointer items-center">
-          <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Model S</li>
+          <li className="py-1 px-4  hover:rounded hover:bg-black/5 transition-all duration-300">Model S</li>
           <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Model 3</li>
           <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Model X</li>
           <li className="py-1 px-4 hover:rounded hover:bg-black/5 transition-all duration-300">Model Y</li>

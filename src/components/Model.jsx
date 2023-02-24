@@ -16,31 +16,31 @@ function Model() {
     }
     didAnimate.current = true;
     gsap.from(nameRef.current, {
-      delay: 1,
+      delay: 1.2,
       opacity: 0,
       duration: 0.6,
       y: 50,
     });
     gsap.from(subRef.current, {
-      delay: 1.6,
+      delay: 1.8,
       opacity: 0,
       duration: 0.6,
       y: 50,
     });
     gsap.from(btnRightRef.current, {
-      delay: 1.6,
+      delay: 1.8,
       opacity: 0,
       duration: 0.6,
       x: 50,
     });
     gsap.from(btnLeftRef.current, {
-      delay: 1.6,
+      delay: 1.8,
       opacity: 0,
       duration: 0.6,
       x: -50,
     });
     gsap.from(chevRef.current, {
-      delay: 2.4,
+      delay: 2.6,
       opacity: 0,
       duration: 0.6,
       y: -50,
