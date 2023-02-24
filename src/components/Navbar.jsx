@@ -1,16 +1,30 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Logo from "../assets/logo/tesla-logo.svg";
 import { TfiClose } from "react-icons/tfi";
+import gsap from "gsap";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+  const didAnimate = useRef(false);
+  const navRef = useRef(null);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    if (didAnimate.current) {
+      return;
+    }
+    didAnimate.current = true;
+    gsap.from(navRef.current, {
+      opacity: 0,
+      duration: 2,
+    })
+  }, [])
+  
   return (
-    <div className="flex justify-between items-center px-12 p-4 text-sm">
+    <div ref={navRef} className="flex justify-between items-center px-12 p-4 text-sm">
       <div>
         <img className="h-3 cursor-pointer" src={Logo} alt="Tesla logo" />
       </div>
